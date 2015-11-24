@@ -33,8 +33,8 @@ namespace WebApplication1
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
-			var certificate = new System.Security.Cryptography.X509Certificates.X509Certificate2("MyCertificate.pfx", "CertPass");
-			app.UseKestrelHttps(certificate);
+            var certificate = new System.Security.Cryptography.X509Certificates.X509Certificate2("MyCertificate.pfx", "CertPass");
+            app.UseKestrelHttps(certificate);
 
             app.UseIISPlatformHandler();
 

@@ -4,7 +4,7 @@ using Microsoft.AspNet.Mvc;
 namespace WebApplication1.Controllers
 {
     [Route("api/[controller]")]
-	[RequireHttps]
+    [RequireHttps]
     public class ValuesController : Controller
     {
         // GET: api/values
